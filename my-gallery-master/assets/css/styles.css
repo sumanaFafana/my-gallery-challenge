@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
+
+:root {
+  font-size: 0.875em;
+  box-sizing: border-box;
+}
+
+@media (min-width: 768px) {
+  :root {
+    font-size: 1.2em;
+    box-sizing: border-box;
+  }
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5;
+  padding-inline: 1.1rem;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  body {
+    padding-inline: 3rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  body {
+    padding-inline: 4rem;
+  }
+}
+
+img {
+  width: 100%;
+}
+
+.header {
+  margin-top: 2.15rem;
+}
+
+.header__profile-image {
+  width: 101.76px;
+  height: 101.76px;
+  border-radius: 10px;
+}
+
+@media (min-width: 768px) {
+  .header__profile-image {
+    width: 151px;
+    height: 151px;
+  }
+}
+
+.header__profile-name {
+  margin-bottom: 0;
+}
+
+.profile-location {
+  font-size: 0.7rem;
+  color: hsla(0, 0%, 66%, 1);
+  margin-top: 0.3rem;
+}
+
+.header__page-stats {
+  display: flex;
+  justify-content: center;
+  gap: 0.9rem;
+}
+
+.header__page-stats > div {
+  display: flex;
+  flex-direction: column;
+  background-color: hsla(0, 0%, 90%, 1);
+  padding: 1rem 1.5rem;
+  max-width: 100%;
+  border-radius: 10px;
+  flex-basis: 20px;
+}
+
+.info-digits {
+  font-size: 0.9rem;
+}
+
+.info-title {
+  font-size: 0.9rem;
+  color: hsla(0, 0%, 74%, 1);
+}
+
+/* MAIN */
+.main {
+  margin-top: 2.9rem;
+  display: grid;
+  grid-template-areas:
+    "photo-1 photo-2 photo-2"
+    "photo-3 photo-3 photo-4"
+    "photo-6 photo-5 photo-4";
+  gap: 0.93rem;
+  align-items: stretch;
+}
+
+.main img {
+  border-radius: 10px;
+  box-shadow: 0 4px 6px hsla(0, 0%, 0%, 0.15);
+}
+
+.photo-1 {
+  grid-area: photo-1;
+}
+
+.photo-2 {
+  grid-area: photo-2;
+}
+
+.photo-3 {
+  grid-area: photo-3;
+}
+
+.photo-4 {
+  grid-area: photo-4;
+}
+
+.photo-5 {
+  grid-area: photo-5;
+}
+
+.photo-6 {
+  grid-area: photo-6;
+}
+
+/* FOOTER */
+.footer {
+  color: #bdbdbd;
+  font-size: 0.9rem;
+
+  margin-top: 1.9rem;
+  margin-bottom: 1.9rem;
+}
+
+.footer a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.author a:link {
+  position: relative;
+  transition: all 0.3s;
+}
+
+.author a:link::after {
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  content: "";
+  display: inline-block;
+  height: 4px;
+  width: 0;
+  background-color: #bdbdbd;
+  transition: all 0.3s;
+}
+.author a:hover::after {
+  width: 100%;
+  background-color: #9c9b9b;
+}
